@@ -1,6 +1,6 @@
 ---
-# Dynamic Model of Cocktail Party Nightmare
- Implementing a dynamic model of the cocktail party nightmare problem :)
+
+ Implementing a dynamic model of coordination :)
 ---
 
 ## Installation of environment
