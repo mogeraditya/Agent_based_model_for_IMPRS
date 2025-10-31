@@ -42,7 +42,7 @@ class Animal:
         self.next_direction = self.direction
         
         self.activation_state = False # respond to sound or not
-        self.destination = False
+        self.destination = False # sound origin
         
         if self.id==0:
             self.activation_state = True
@@ -67,10 +67,7 @@ class Animal:
             self.activation_state = False
         elif self.id != 0  and self.activation_state == True:
             self.emit_sounds(current_time, sound_objects)
-        # if self.id == 0 and self.time_since_directon_change == 0:
-        #     print(current_time)
 
-        # self.decide_next_direction(self.received_sounds)
         self.deactivate_once_goal_reached()
         self.update_directon(current_time, sound_objects)
         self.cleanup_sounds(current_time)
